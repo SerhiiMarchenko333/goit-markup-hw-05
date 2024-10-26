@@ -511,24 +511,20 @@ display: flex;
     margin-left: 80px;
 }
 
-.footer-form {
-    width: 453px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-}
-
-.footer-input-group {
-    display: flex;
-    align-items: center;
-}
-
-.footer-subscribe-text{
-font-size: 16px;
+.footer-subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+
+.footer-form {
+    width: 453px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
 }
 
 .footer-input {
