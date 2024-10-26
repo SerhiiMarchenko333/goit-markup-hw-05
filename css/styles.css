@@ -692,7 +692,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-textarea {
@@ -722,9 +722,13 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-field-checkbox {
+    margin-bottom: 24px;
+}
+
 .modal-check-text {
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: flex;
@@ -741,12 +745,19 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         align-items: center;
         justify-content: center;
         fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
 }
 
 .modal-check:checked + .modal-check-text span {
     background-color: #404bbf;
     border: none;
-fill: #FFFFFF;
+    fill: #F4F4FD;
+}
+
+.modal-check-link {
+    color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .modal-btn {
@@ -754,7 +765,7 @@ fill: #FFFFFF;
     display: block;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -764,4 +775,6 @@ fill: #FFFFFF;
         letter-spacing: 0.04em;
         text-align: center;
         color: #fff;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
