@@ -537,6 +537,14 @@ display: flex;
         background-color: transparent;
         padding-left: 16px;
         padding-right: 16px;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+}
+
+.footer-input::placeholder {
+    color #ffffff;
 }
 
 .footer-btn {
@@ -547,18 +555,18 @@ display: flex;
         text-align: center;
         color: #fff;
         border-radius: 4px;
-            width: 165px;
+            min-width: 165px;
             height: 40px;
             background-color: #4d5ae5;
             border: none;
             display: flex;
             justify-content: center;
-            gap: 16px;
             align-items: center;
 }
 
 .footer-subscribe-icon {
     fill: white;
+    margin-left: 16px;
 }
 
 .backdrop {
